@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup2 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup11 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup12 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTrangChu));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
@@ -232,6 +232,7 @@
             this.barButtonItem7.Id = 7;
             this.barButtonItem7.LargeGlyph = global::QuanLiSieuThi.Properties.Resources.Product_documentation_icon;
             this.barButtonItem7.Name = "barButtonItem7";
+            this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.buttonClick_ThongTinHanghoa);
             // 
             // barButtonItem8
             // 
@@ -239,6 +240,7 @@
             this.barButtonItem8.Id = 8;
             this.barButtonItem8.LargeGlyph = global::QuanLiSieuThi.Properties.Resources.shopping_bag_icon;
             this.barButtonItem8.Name = "barButtonItem8";
+            this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.buttonClick_LoaiHang);
             // 
             // barButtonItem9
             // 
@@ -246,6 +248,7 @@
             this.barButtonItem9.Id = 9;
             this.barButtonItem9.LargeGlyph = global::QuanLiSieuThi.Properties.Resources.shopping_bags_icon;
             this.barButtonItem9.Name = "barButtonItem9";
+            this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.buttonClick_ChungLoaiHang);
             // 
             // barButtonItem10
             // 
@@ -253,6 +256,7 @@
             this.barButtonItem10.Id = 10;
             this.barButtonItem10.LargeGlyph = global::QuanLiSieuThi.Properties.Resources.calculator_icon;
             this.barButtonItem10.Name = "barButtonItem10";
+            this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.buttonClick_DonViTinh);
             // 
             // barButtonItem11
             // 
@@ -261,6 +265,7 @@
             this.barButtonItem11.LargeGlyph = global::QuanLiSieuThi.Properties.Resources.truck_icon;
             this.barButtonItem11.LargeWidth = 100;
             this.barButtonItem11.Name = "barButtonItem11";
+            this.barButtonItem11.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.buttonClick_NhaCungCap);
             // 
             // barButtonItem12
             // 
@@ -424,11 +429,11 @@
             // 
             // 
             // 
-            galleryItemGroup1.Caption = "Group1";
-            galleryItemGroup2.Caption = "Group2";
+            galleryItemGroup11.Caption = "Group1";
+            galleryItemGroup12.Caption = "Group2";
             this.skinRibbonGalleryBarItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup1,
-            galleryItemGroup2});
+            galleryItemGroup11,
+            galleryItemGroup12});
             this.skinRibbonGalleryBarItem1.Id = 37;
             this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
             // 
