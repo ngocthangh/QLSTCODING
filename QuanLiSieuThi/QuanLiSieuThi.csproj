@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTab.cs" />
     <Compile Include="frmChungLoaiHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +81,12 @@
     </Compile>
     <Compile Include="frmLoaiHang.Designer.cs">
       <DependentUpon>frmLoaiHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTraCuuHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTraCuuHangHoa.Designer.cs">
+      <DependentUpon>frmTraCuuHangHoa.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTrangChu.cs">
       <SubType>Form</SubType>
@@ -106,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoaiHang.resx">
       <DependentUpon>frmLoaiHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTraCuuHangHoa.resx">
+      <DependentUpon>frmTraCuuHangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTrangChu.resx">
       <DependentUpon>frmTrangChu.cs</DependentUpon>

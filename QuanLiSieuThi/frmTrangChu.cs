@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.Skins;
 using DevExpress.UserSkins;
+using DevExpress.XtraTab;
 
 namespace QuanLiSieuThi
 {
@@ -20,7 +21,6 @@ namespace QuanLiSieuThi
 
         private void frmTrangChu_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello World 123243434!");
             DevExpress.UserSkins.BonusSkins.Register();
             DevExpress.UserSkins.OfficeSkins.Register();
             DevExpress.XtraBars.Helpers.SkinHelper.InitSkinGallery(ribbonGalleryBarItem1, true);
@@ -52,6 +52,7 @@ namespace QuanLiSieuThi
             }
             var f = new frmHangHoa();
             f.Show();
+
         }
 
         private void buttonClick_ChungLoaiHang(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -96,6 +97,6 @@ namespace QuanLiSieuThi
             }
             var f = new frmNhaCungCap();
             f.Show();
-        }
+        }    
     }
 }

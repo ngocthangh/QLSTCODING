@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup11 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup12 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTrangChu));
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup7 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup8 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -103,14 +102,14 @@
             this.ribbonPageGroup25 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemDateEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
+            this.panelTrangChu = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.galleryDropDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelTrangChu)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -429,11 +428,11 @@
             // 
             // 
             // 
-            galleryItemGroup11.Caption = "Group1";
-            galleryItemGroup12.Caption = "Group2";
+            galleryItemGroup7.Caption = "Group1";
+            galleryItemGroup8.Caption = "Group2";
             this.skinRibbonGalleryBarItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup11,
-            galleryItemGroup12});
+            galleryItemGroup7,
+            galleryItemGroup8});
             this.skinRibbonGalleryBarItem1.Id = 37;
             this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
             // 
@@ -686,25 +685,18 @@
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
             this.ribbonStatusBar1.Size = new System.Drawing.Size(877, 31);
             // 
-            // imageSlider1
-            // 
-            this.imageSlider1.CurrentImageIndex = 0;
-            this.imageSlider1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images"))));
-            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images1"))));
-            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images2"))));
-            this.imageSlider1.LayoutMode = DevExpress.Utils.Drawing.ImageLayoutMode.Stretch;
-            this.imageSlider1.Location = new System.Drawing.Point(0, 143);
-            this.imageSlider1.Name = "imageSlider1";
-            this.imageSlider1.Size = new System.Drawing.Size(877, 242);
-            this.imageSlider1.TabIndex = 2;
-            this.imageSlider1.Text = "imageSlider1";
-            this.imageSlider1.UseDisabledStatePainter = true;
-            // 
             // galleryDropDown1
             // 
             this.galleryDropDown1.Name = "galleryDropDown1";
             this.galleryDropDown1.Ribbon = this.ribbonControl1;
+            // 
+            // panelTrangChu
+            // 
+            this.panelTrangChu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTrangChu.Location = new System.Drawing.Point(0, 143);
+            this.panelTrangChu.Name = "panelTrangChu";
+            this.panelTrangChu.Size = new System.Drawing.Size(877, 242);
+            this.panelTrangChu.TabIndex = 5;
             // 
             // frmTrangChu
             // 
@@ -712,7 +704,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 416);
-            this.Controls.Add(this.imageSlider1);
+            this.Controls.Add(this.panelTrangChu);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
             this.Name = "frmTrangChu";
@@ -724,8 +716,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.galleryDropDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelTrangChu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -794,7 +786,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem29;
         private DevExpress.XtraBars.BarButtonItem barButtonItem30;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup24;
-        private DevExpress.XtraEditors.Controls.ImageSlider imageSlider1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem31;
         private DevExpress.XtraBars.BarButtonItem barButtonItem32;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup22;
@@ -806,6 +797,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup26;
         private DevExpress.XtraBars.Ribbon.GalleryDropDown galleryDropDown1;
         private DevExpress.XtraEditors.Repository.RepositoryItemDateEdit repositoryItemDateEdit1;
+        private DevExpress.XtraEditors.PanelControl panelTrangChu;
     }
 }
 
