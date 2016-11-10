@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="908de292-1a38-49e7-b9d7-35c1a41d28c8" name="UMLClassDiagramQLST" linkedPackageId="8f06bf91-184f-47bf-a0ec-9f9bfad185eb" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="8424113a-394d-4ab0-94bc-6f10490ebd1c">
+      <profileInstance Id="6480dc44-e71c-4966-b1ee-8a22b97d26f3" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d3e6c52c-dae1-4717-806e-4b9b7e1b8cae">
+      <profileInstance Id="76e8fd07-7670-4e3b-afdd-5b84da57d9b3" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="282ffb15-23cc-4770-b96d-6920ccbb3195" name="Class1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d73b2ce6-84d1-45b1-849d-77383355d0f1" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="543613dc-8711-40dc-94d3-3905efb6b8f1" name="Class2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1b7a4af2-5a44-4613-9ac8-cbece0d3da3c" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7de6ee89-d430-410a-a108-9d5288c23040" name="Class3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a46f19db-6b44-4651-b5a5-3cd81d819451" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a7deff26-a432-4202-a78f-d5060018de70" name="Class4" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6fcfa58e-8b33-4598-b744-9d7f5ff963cd" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3dcdeca4-c9d9-4134-8491-4a35eea0dbcd" name="Class5" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c2658900-bc5a-4040-b23a-4e8472b5c867" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2f6c9adb-14da-4966-b680-ba4d7082ad0c" name="Class6" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="92c0b489-8f1d-4129-93a5-f54ab5fdf2ea" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="35b51fc8-6b0e-402d-b2e2-6a46e9857e7d" name="Class7" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c3a32d81-1c66-4bf9-b340-de69667a09b7" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="8f06bf91-184f-47bf-a0ec-9f9bfad185eb" name="Modeling">
+    <elementDefinition Id="6bb5edd2-8ac2-4793-9556-9b2c1f0e8bb6" />
+  </package>
+</logicalClassDesignerModel>
