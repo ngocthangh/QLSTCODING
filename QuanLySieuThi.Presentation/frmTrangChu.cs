@@ -15,9 +15,7 @@ namespace QuanLySieuThi.Presentation
 
         private void frmTrangChu_Load(object sender, EventArgs e)
         {
-            //MessageBox.Show("Hello World 123243434!");
             DevExpress.UserSkins.BonusSkins.Register();
-            //DevExpress.UserSkins.OfficeSkins.Register();
             DevExpress.XtraBars.Helpers.SkinHelper.InitSkinGallery(ribbonGalleryBarItem1, true);
         }
 
