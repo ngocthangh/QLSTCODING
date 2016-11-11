@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{15A3D1C9-63F8-43B6-818E-A1B90C8440A6}</ProjectGuid>
+    <ProjectGuid>{4F9275A9-18D2-4C93-BD8E-95132F704129}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QuanLySieuThi.Common</RootNamespace>
-    <AssemblyName>QuanLySieuThi.Common</AssemblyName>
+    <RootNamespace>QuanLySieuThi.DataModel</RootNamespace>
+    <AssemblyName>QuanLySieuThi.DataModel</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,8 +40,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProjectConfig.cs" />
+    <Compile Include="ChiTietHoaDon.cs" />
+    <Compile Include="ChiTietKiemKe.cs" />
+    <Compile Include="ChiTietPhieuNhap.cs" />
+    <Compile Include="ChiTietPhieuXuat.cs" />
+    <Compile Include="ChucVu.cs" />
+    <Compile Include="ChungLoai.cs" />
+    <Compile Include="DataBinding.cs" />
+    <Compile Include="DonViTinh.cs" />
+    <Compile Include="HangHoa.cs" />
+    <Compile Include="HoaDon.cs" />
+    <Compile Include="KhachHangThanThiet.cs" />
+    <Compile Include="LoaiHang.cs" />
+    <Compile Include="NhaCungCap.cs" />
+    <Compile Include="NhanVien.cs" />
+    <Compile Include="PhieuKiemKe.cs" />
+    <Compile Include="PhieuNhap.cs" />
+    <Compile Include="PhieuXuat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThamSo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
