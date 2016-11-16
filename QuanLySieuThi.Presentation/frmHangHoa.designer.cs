@@ -60,21 +60,21 @@
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.gridHangHoa = new DevExpress.XtraGrid.GridControl();
+            this.grcHangHoa = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colunmHangHoaSTT = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colunmHangHoaMaHH = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colunmHangHoaTenHH = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colunmHangHoaGiaMua = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colunmHangHoaGiaBan = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colunmHangHoaNgaySanXuat = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colunmHangHoaHanSuDung = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colunmHangHoaSLTonKho = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colunmHangHoaSLTrenQuay = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colunmHangHoaNgayNhap = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colunmHangHoaVAT = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colunmHangHoaLoaiHang = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colunmHangHoaDonViTinh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaHangHoa = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TenHangHoa = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GiaMua = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GiaBan = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NgaySanXuat = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.HanSuDung = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SoLuongNhap = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SoLuongBan = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NgayNhap = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.VAT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaLoaiHang = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaDVT = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtVAT.Properties)).BeginInit();
@@ -98,7 +98,7 @@
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridHangHoa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grcHangHoa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -299,7 +299,7 @@
             this.txtGiaBan.Properties.Mask.BeepOnError = true;
             this.txtGiaBan.Properties.Mask.EditMask = "d";
             this.txtGiaBan.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtGiaBan.Size = new System.Drawing.Size(102, 20);
+            this.txtGiaBan.Size = new System.Drawing.Size(100, 20);
             this.txtGiaBan.TabIndex = 7;
             // 
             // labelControl4
@@ -408,7 +408,7 @@
             // 
             // groupControl2
             // 
-            this.groupControl2.Controls.Add(this.gridHangHoa);
+            this.groupControl2.Controls.Add(this.grcHangHoa);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl2.Location = new System.Drawing.Point(0, 150);
             this.groupControl2.Name = "groupControl2";
@@ -416,34 +416,35 @@
             this.groupControl2.TabIndex = 2;
             this.groupControl2.Text = "Danh Sách Hàng Hóa";
             // 
-            // gridHangHoa
+            // grcHangHoa
             // 
-            this.gridHangHoa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridHangHoa.Location = new System.Drawing.Point(2, 20);
-            this.gridHangHoa.MainView = this.gridView1;
-            this.gridHangHoa.Name = "gridHangHoa";
-            this.gridHangHoa.Size = new System.Drawing.Size(873, 240);
-            this.gridHangHoa.TabIndex = 0;
-            this.gridHangHoa.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.grcHangHoa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grcHangHoa.Location = new System.Drawing.Point(2, 20);
+            this.grcHangHoa.MainView = this.gridView1;
+            this.grcHangHoa.Name = "grcHangHoa";
+            this.grcHangHoa.Size = new System.Drawing.Size(873, 240);
+            this.grcHangHoa.TabIndex = 0;
+            this.grcHangHoa.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.grcHangHoa.Load += new System.EventHandler(this.grcHangHoa_Load);
             // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colunmHangHoaSTT,
-            this.colunmHangHoaMaHH,
-            this.colunmHangHoaTenHH,
-            this.colunmHangHoaGiaMua,
-            this.colunmHangHoaGiaBan,
-            this.colunmHangHoaNgaySanXuat,
-            this.colunmHangHoaHanSuDung,
-            this.colunmHangHoaSLTonKho,
-            this.colunmHangHoaSLTrenQuay,
-            this.colunmHangHoaNgayNhap,
-            this.colunmHangHoaVAT,
-            this.colunmHangHoaLoaiHang,
-            this.colunmHangHoaDonViTinh});
-            this.gridView1.GridControl = this.gridHangHoa;
+            this.MaHangHoa,
+            this.TenHangHoa,
+            this.GiaMua,
+            this.GiaBan,
+            this.NgaySanXuat,
+            this.HanSuDung,
+            this.SoLuongNhap,
+            this.SoLuongBan,
+            this.NgayNhap,
+            this.VAT,
+            this.MaLoaiHang,
+            this.MaDVT});
+            this.gridView1.GridControl = this.grcHangHoa;
             this.gridView1.IndicatorWidth = 40;
             this.gridView1.Name = "gridView1";
             this.gridView1.NewItemRowText = "Thêm Mới";
@@ -457,89 +458,101 @@
             this.colunmHangHoaSTT.Visible = true;
             this.colunmHangHoaSTT.VisibleIndex = 0;
             // 
-            // colunmHangHoaMaHH
+            // MaHangHoa
             // 
-            this.colunmHangHoaMaHH.Caption = "Mã Hàng Hóa";
-            this.colunmHangHoaMaHH.Name = "colunmHangHoaMaHH";
-            this.colunmHangHoaMaHH.Visible = true;
-            this.colunmHangHoaMaHH.VisibleIndex = 1;
+            this.MaHangHoa.Caption = "Mã Hàng Hóa";
+            this.MaHangHoa.FieldName = "MaHangHoa";
+            this.MaHangHoa.Name = "MaHangHoa";
+            this.MaHangHoa.Visible = true;
+            this.MaHangHoa.VisibleIndex = 1;
             // 
-            // colunmHangHoaTenHH
+            // TenHangHoa
             // 
-            this.colunmHangHoaTenHH.Caption = "Tên Hàng Hóa";
-            this.colunmHangHoaTenHH.Name = "colunmHangHoaTenHH";
-            this.colunmHangHoaTenHH.Visible = true;
-            this.colunmHangHoaTenHH.VisibleIndex = 2;
+            this.TenHangHoa.Caption = "Tên Hàng Hóa";
+            this.TenHangHoa.FieldName = "TenHangHoa";
+            this.TenHangHoa.Name = "TenHangHoa";
+            this.TenHangHoa.Visible = true;
+            this.TenHangHoa.VisibleIndex = 2;
             // 
-            // colunmHangHoaGiaMua
+            // GiaMua
             // 
-            this.colunmHangHoaGiaMua.Caption = "Giá Mua";
-            this.colunmHangHoaGiaMua.Name = "colunmHangHoaGiaMua";
-            this.colunmHangHoaGiaMua.Visible = true;
-            this.colunmHangHoaGiaMua.VisibleIndex = 3;
+            this.GiaMua.Caption = "Giá Mua";
+            this.GiaMua.FieldName = "GiaMua";
+            this.GiaMua.Name = "GiaMua";
+            this.GiaMua.Visible = true;
+            this.GiaMua.VisibleIndex = 3;
             // 
-            // colunmHangHoaGiaBan
+            // GiaBan
             // 
-            this.colunmHangHoaGiaBan.Caption = "Giá Bán";
-            this.colunmHangHoaGiaBan.Name = "colunmHangHoaGiaBan";
-            this.colunmHangHoaGiaBan.Visible = true;
-            this.colunmHangHoaGiaBan.VisibleIndex = 4;
+            this.GiaBan.Caption = "Giá Bán";
+            this.GiaBan.FieldName = "GiaBan";
+            this.GiaBan.Name = "GiaBan";
+            this.GiaBan.Visible = true;
+            this.GiaBan.VisibleIndex = 4;
             // 
-            // colunmHangHoaNgaySanXuat
+            // NgaySanXuat
             // 
-            this.colunmHangHoaNgaySanXuat.Caption = "Ngày Sản Xuất";
-            this.colunmHangHoaNgaySanXuat.Name = "colunmHangHoaNgaySanXuat";
-            this.colunmHangHoaNgaySanXuat.Visible = true;
-            this.colunmHangHoaNgaySanXuat.VisibleIndex = 5;
+            this.NgaySanXuat.Caption = "Ngày Sản Xuất";
+            this.NgaySanXuat.FieldName = "NgaySanXuat";
+            this.NgaySanXuat.Name = "NgaySanXuat";
+            this.NgaySanXuat.Visible = true;
+            this.NgaySanXuat.VisibleIndex = 5;
             // 
-            // colunmHangHoaHanSuDung
+            // HanSuDung
             // 
-            this.colunmHangHoaHanSuDung.Caption = "Hạn Sử Dụng";
-            this.colunmHangHoaHanSuDung.Name = "colunmHangHoaHanSuDung";
-            this.colunmHangHoaHanSuDung.Visible = true;
-            this.colunmHangHoaHanSuDung.VisibleIndex = 6;
+            this.HanSuDung.Caption = "Hạn Sử Dụng";
+            this.HanSuDung.FieldName = "HanSuDung";
+            this.HanSuDung.Name = "HanSuDung";
+            this.HanSuDung.Visible = true;
+            this.HanSuDung.VisibleIndex = 6;
             // 
-            // colunmHangHoaSLTonKho
+            // SoLuongNhap
             // 
-            this.colunmHangHoaSLTonKho.Caption = "SL Tồn Kho";
-            this.colunmHangHoaSLTonKho.Name = "colunmHangHoaSLTonKho";
-            this.colunmHangHoaSLTonKho.Visible = true;
-            this.colunmHangHoaSLTonKho.VisibleIndex = 7;
+            this.SoLuongNhap.Caption = "Số Lượng Nhập";
+            this.SoLuongNhap.FieldName = "SoLuongNhap";
+            this.SoLuongNhap.Name = "SoLuongNhap";
+            this.SoLuongNhap.Visible = true;
+            this.SoLuongNhap.VisibleIndex = 7;
             // 
-            // colunmHangHoaSLTrenQuay
+            // SoLuongBan
             // 
-            this.colunmHangHoaSLTrenQuay.Caption = "SL Trên Quầy";
-            this.colunmHangHoaSLTrenQuay.Name = "colunmHangHoaSLTrenQuay";
-            this.colunmHangHoaSLTrenQuay.Visible = true;
-            this.colunmHangHoaSLTrenQuay.VisibleIndex = 8;
+            this.SoLuongBan.Caption = "Số Lượng Bán";
+            this.SoLuongBan.FieldName = "SoLuongBan";
+            this.SoLuongBan.Name = "SoLuongBan";
+            this.SoLuongBan.Visible = true;
+            this.SoLuongBan.VisibleIndex = 8;
             // 
-            // colunmHangHoaNgayNhap
+            // NgayNhap
             // 
-            this.colunmHangHoaNgayNhap.Caption = "Ngày Nhập";
-            this.colunmHangHoaNgayNhap.Name = "colunmHangHoaNgayNhap";
-            this.colunmHangHoaNgayNhap.Visible = true;
-            this.colunmHangHoaNgayNhap.VisibleIndex = 9;
+            this.NgayNhap.Caption = "Ngày Nhập";
+            this.NgayNhap.FieldName = "NgayNhap";
+            this.NgayNhap.Name = "NgayNhap";
+            this.NgayNhap.Visible = true;
+            this.NgayNhap.VisibleIndex = 9;
             // 
-            // colunmHangHoaVAT
+            // VAT
             // 
-            this.colunmHangHoaVAT.Caption = "VAT";
-            this.colunmHangHoaVAT.Name = "colunmHangHoaVAT";
-            this.colunmHangHoaVAT.Visible = true;
-            this.colunmHangHoaVAT.VisibleIndex = 10;
+            this.VAT.Caption = "VAT";
+            this.VAT.FieldName = "VAT";
+            this.VAT.Name = "VAT";
+            this.VAT.Visible = true;
+            this.VAT.VisibleIndex = 10;
             // 
-            // colunmHangHoaLoaiHang
+            // MaLoaiHang
             // 
-            this.colunmHangHoaLoaiHang.Caption = "Loại Hàng";
-            this.colunmHangHoaLoaiHang.Name = "colunmHangHoaLoaiHang";
-            this.colunmHangHoaLoaiHang.Visible = true;
-            this.colunmHangHoaLoaiHang.VisibleIndex = 11;
+            this.MaLoaiHang.Caption = "Loại Hàng";
+            this.MaLoaiHang.FieldName = "MaLoaiHang";
+            this.MaLoaiHang.Name = "MaLoaiHang";
+            this.MaLoaiHang.Visible = true;
+            this.MaLoaiHang.VisibleIndex = 11;
             // 
-            // colunmHangHoaDonViTinh
+            // MaDVT
             // 
-            this.colunmHangHoaDonViTinh.Caption = "Đơn Vị Tính";
-            this.colunmHangHoaDonViTinh.Name = "colunmHangHoaDonViTinh";
-            this.colunmHangHoaDonViTinh.Visible = true;
-            this.colunmHangHoaDonViTinh.VisibleIndex = 12;
+            this.MaDVT.Caption = "Đơn Vị Tính";
+            this.MaDVT.FieldName = "MaDVT";
+            this.MaDVT.Name = "MaDVT";
+            this.MaDVT.Visible = true;
+            this.MaDVT.VisibleIndex = 12;
             // 
             // frmHangHoa
             // 
@@ -575,7 +588,7 @@
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridHangHoa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grcHangHoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -597,21 +610,21 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private DevExpress.XtraGrid.GridControl gridHangHoa;
+        private DevExpress.XtraGrid.GridControl grcHangHoa;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn colunmHangHoaSTT;
-        private DevExpress.XtraGrid.Columns.GridColumn colunmHangHoaMaHH;
-        private DevExpress.XtraGrid.Columns.GridColumn colunmHangHoaTenHH;
-        private DevExpress.XtraGrid.Columns.GridColumn colunmHangHoaGiaMua;
-        private DevExpress.XtraGrid.Columns.GridColumn colunmHangHoaGiaBan;
-        private DevExpress.XtraGrid.Columns.GridColumn colunmHangHoaNgaySanXuat;
-        private DevExpress.XtraGrid.Columns.GridColumn colunmHangHoaHanSuDung;
-        private DevExpress.XtraGrid.Columns.GridColumn colunmHangHoaSLTonKho;
-        private DevExpress.XtraGrid.Columns.GridColumn colunmHangHoaSLTrenQuay;
-        private DevExpress.XtraGrid.Columns.GridColumn colunmHangHoaNgayNhap;
-        private DevExpress.XtraGrid.Columns.GridColumn colunmHangHoaVAT;
-        private DevExpress.XtraGrid.Columns.GridColumn colunmHangHoaLoaiHang;
-        private DevExpress.XtraGrid.Columns.GridColumn colunmHangHoaDonViTinh;
+        private DevExpress.XtraGrid.Columns.GridColumn MaHangHoa;
+        private DevExpress.XtraGrid.Columns.GridColumn TenHangHoa;
+        private DevExpress.XtraGrid.Columns.GridColumn GiaMua;
+        private DevExpress.XtraGrid.Columns.GridColumn GiaBan;
+        private DevExpress.XtraGrid.Columns.GridColumn NgaySanXuat;
+        private DevExpress.XtraGrid.Columns.GridColumn HanSuDung;
+        private DevExpress.XtraGrid.Columns.GridColumn SoLuongNhap;
+        private DevExpress.XtraGrid.Columns.GridColumn SoLuongBan;
+        private DevExpress.XtraGrid.Columns.GridColumn NgayNhap;
+        private DevExpress.XtraGrid.Columns.GridColumn VAT;
+        private DevExpress.XtraGrid.Columns.GridColumn MaLoaiHang;
+        private DevExpress.XtraGrid.Columns.GridColumn MaDVT;
         private DevExpress.XtraEditors.DateEdit dateHanSuDung;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl7;

@@ -63,16 +63,6 @@ namespace QuanLySieuThi.Presentation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1477723843_Info {
-            get {
-                object obj = ResourceManager.GetObject("_1477723843_Info", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _1477723946_Information {
             get {
                 object obj = ResourceManager.GetObject("_1477723946_Information", resourceCulture);

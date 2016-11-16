@@ -33,13 +33,13 @@
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.grcDonViTinh = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grcDonViTinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +83,7 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.gridControl1);
+            this.groupControl1.Controls.Add(this.grcDonViTinh);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 33);
             this.groupControl1.Name = "groupControl1";
@@ -91,20 +91,21 @@
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Danh Sách Đơn Vị Tính";
             // 
-            // gridControl1
+            // grcDonViTinh
             // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(2, 20);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(615, 351);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.grcDonViTinh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grcDonViTinh.Location = new System.Drawing.Point(2, 20);
+            this.grcDonViTinh.MainView = this.gridView1;
+            this.grcDonViTinh.Name = "grcDonViTinh";
+            this.grcDonViTinh.Size = new System.Drawing.Size(615, 351);
+            this.grcDonViTinh.TabIndex = 0;
+            this.grcDonViTinh.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.grcDonViTinh.Load += new System.EventHandler(this.grcDonViTinh_Load);
             // 
             // gridView1
             // 
-            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.GridControl = this.grcDonViTinh;
             this.gridView1.IndicatorWidth = 40;
             this.gridView1.Name = "gridView1";
             this.gridView1.NewItemRowText = "Thêm Mới";
@@ -128,7 +129,7 @@
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grcDonViTinh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -141,7 +142,7 @@
         private DevExpress.XtraEditors.SimpleButton btnXoa;
         private DevExpress.XtraEditors.SimpleButton btnLuu;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.GridControl grcDonViTinh;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }

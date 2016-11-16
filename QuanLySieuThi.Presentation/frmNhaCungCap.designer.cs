@@ -41,14 +41,14 @@
             this.btnDong = new DevExpress.XtraEditors.SimpleButton();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.grcDSNhaCungCap = new DevExpress.XtraEditors.GroupControl();
+            this.grcNhaCungCap = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaNhaCungCap = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TenNhaCungCap = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SoDienThoai = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.DiaChi = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoDienThoai.Properties)).BeginInit();
@@ -57,9 +57,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtMaNhaCungCap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
-            this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grcDSNhaCungCap)).BeginInit();
+            this.grcDSNhaCungCap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grcNhaCungCap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -180,36 +180,36 @@
             this.btnLuu.TabIndex = 3;
             this.btnLuu.Text = "Lưu";
             // 
-            // groupControl2
+            // grcDSNhaCungCap
             // 
-            this.groupControl2.Controls.Add(this.gridControl1);
-            this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl2.Location = new System.Drawing.Point(0, 115);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(678, 286);
-            this.groupControl2.TabIndex = 2;
-            this.groupControl2.Text = "Danh Sách Nhà Cung Cấp";
+            this.grcDSNhaCungCap.Controls.Add(this.grcNhaCungCap);
+            this.grcDSNhaCungCap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grcDSNhaCungCap.Location = new System.Drawing.Point(0, 115);
+            this.grcDSNhaCungCap.Name = "grcDSNhaCungCap";
+            this.grcDSNhaCungCap.Size = new System.Drawing.Size(678, 286);
+            this.grcDSNhaCungCap.TabIndex = 2;
+            this.grcDSNhaCungCap.Text = "Danh Sách Nhà Cung Cấp";
             // 
-            // gridControl1
+            // grcNhaCungCap
             // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(2, 20);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(674, 264);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.grcNhaCungCap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grcNhaCungCap.Location = new System.Drawing.Point(2, 20);
+            this.grcNhaCungCap.MainView = this.gridView1;
+            this.grcNhaCungCap.Name = "grcNhaCungCap";
+            this.grcNhaCungCap.Size = new System.Drawing.Size(674, 264);
+            this.grcNhaCungCap.TabIndex = 0;
+            this.grcNhaCungCap.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5});
-            this.gridView1.GridControl = this.gridControl1;
+            this.MaNhaCungCap,
+            this.TenNhaCungCap,
+            this.SoDienThoai,
+            this.DiaChi});
+            this.gridView1.GridControl = this.grcNhaCungCap;
             this.gridView1.IndicatorWidth = 40;
             this.gridView1.Name = "gridView1";
             this.gridView1.NewItemRowText = "Thêm Mới";
@@ -225,44 +225,49 @@
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
             // 
-            // gridColumn2
+            // MaNhaCungCap
             // 
-            this.gridColumn2.Caption = "Mã Nhà Cung Cấp";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
+            this.MaNhaCungCap.Caption = "Mã Nhà Cung Cấp";
+            this.MaNhaCungCap.FieldName = "MaNhaCungCap";
+            this.MaNhaCungCap.Name = "MaNhaCungCap";
+            this.MaNhaCungCap.Visible = true;
+            this.MaNhaCungCap.VisibleIndex = 1;
             // 
-            // gridColumn3
+            // TenNhaCungCap
             // 
-            this.gridColumn3.Caption = "Tên Nhà Cung Cấp";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.TenNhaCungCap.Caption = "Tên Nhà Cung Cấp";
+            this.TenNhaCungCap.FieldName = "TenNhaCungCap";
+            this.TenNhaCungCap.Name = "TenNhaCungCap";
+            this.TenNhaCungCap.Visible = true;
+            this.TenNhaCungCap.VisibleIndex = 2;
             // 
-            // gridColumn4
+            // SoDienThoai
             // 
-            this.gridColumn4.Caption = "Số Điện Thoại";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
+            this.SoDienThoai.Caption = "Số Điện Thoại";
+            this.SoDienThoai.FieldName = "DienThoai";
+            this.SoDienThoai.Name = "SoDienThoai";
+            this.SoDienThoai.Visible = true;
+            this.SoDienThoai.VisibleIndex = 3;
             // 
-            // gridColumn5
+            // DiaChi
             // 
-            this.gridColumn5.Caption = "Địa Chỉ";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
+            this.DiaChi.Caption = "Địa Chỉ";
+            this.DiaChi.FieldName = "DiaChi";
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Visible = true;
+            this.DiaChi.VisibleIndex = 4;
             // 
             // frmNhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(678, 401);
-            this.Controls.Add(this.groupControl2);
+            this.Controls.Add(this.grcDSNhaCungCap);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.groupControl1);
             this.Name = "frmNhaCungCap";
             this.Text = "Quản Lý Nhà Cung Cấp";
+            this.Load += new System.EventHandler(this.frmNhaCungCap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
@@ -272,9 +277,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtMaNhaCungCap.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
-            this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grcDSNhaCungCap)).EndInit();
+            this.grcDSNhaCungCap.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grcNhaCungCap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -295,13 +300,13 @@
         private DevExpress.XtraEditors.SimpleButton btnDong;
         private DevExpress.XtraEditors.SimpleButton btnXoa;
         private DevExpress.XtraEditors.SimpleButton btnLuu;
-        private DevExpress.XtraEditors.GroupControl groupControl2;
-        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraEditors.GroupControl grcDSNhaCungCap;
+        private DevExpress.XtraGrid.GridControl grcNhaCungCap;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn MaNhaCungCap;
+        private DevExpress.XtraGrid.Columns.GridColumn TenNhaCungCap;
+        private DevExpress.XtraGrid.Columns.GridColumn SoDienThoai;
+        private DevExpress.XtraGrid.Columns.GridColumn DiaChi;
     }
 }

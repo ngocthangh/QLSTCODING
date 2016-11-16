@@ -1,13 +1,14 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using QuanLySieuThi.DataBussiness;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 
 namespace QuanLySieuThi.Presentation
 {
@@ -16,6 +17,12 @@ namespace QuanLySieuThi.Presentation
         public frmLoaiHang()
         {
             InitializeComponent();
+        }
+
+        private void grcLoaiHang_Load(object sender, EventArgs e)
+        {
+            var dt = LoaiHangService.LoadDataTable();
+            grcLoaiHang.DataSource = dt;
         }
     }
 }

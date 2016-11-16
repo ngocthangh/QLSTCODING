@@ -44,35 +44,17 @@ namespace QuanLySieuThi.Presentation
 
         private void buttonClick_ChungLoaiHang(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            foreach (var form in Application.OpenForms.OfType<frmChungLoaiHang>())
-            {
-                form.Activate();
-                return;
-            }
-            var f = new frmChungLoaiHang();
-            f.Show();
+            OpenForm<frmChungLoaiHang>();
         }
 
         private void buttonClick_LoaiHang(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            foreach (var form in Application.OpenForms.OfType<frmLoaiHang>())
-            {
-                form.Activate();
-                return;
-            }
-            var f = new frmLoaiHang();
-            f.Show();
+            OpenForm<frmLoaiHang>();
         }
 
         private void buttonClick_DonViTinh(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            foreach (var form in Application.OpenForms.OfType<frmDonViTinh>())
-            {
-                form.Activate();
-                return;
-            }
-            var f = new frmDonViTinh();
-            f.Show();
+            OpenForm<frmDonViTinh>();
         }
 
         private void buttonClick_NhaCungCap(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

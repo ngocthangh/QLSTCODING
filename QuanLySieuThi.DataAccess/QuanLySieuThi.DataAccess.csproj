@@ -40,7 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChungLoaiController.cs" />
     <Compile Include="Connector.cs" />
+    <Compile Include="DonViTinhController.cs" />
+    <Compile Include="HangHoaController.cs" />
+    <Compile Include="LoaiHangController.cs" />
+    <Compile Include="NhaCungCapController.cs" />
     <Compile Include="NhanVienController.cs" />
     <Compile Include="PhieuNhapController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

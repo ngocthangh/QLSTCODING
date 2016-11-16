@@ -40,6 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChungLoaiService.cs" />
+    <Compile Include="DonViTinhService.cs" />
+    <Compile Include="HangHoaService.cs" />
+    <Compile Include="LoaiHangService.cs" />
+    <Compile Include="NhaCungCapService.cs" />
     <Compile Include="NhanVienService.cs" />
     <Compile Include="PhieuNhapService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

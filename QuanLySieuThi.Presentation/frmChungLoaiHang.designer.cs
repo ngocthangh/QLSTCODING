@@ -36,8 +36,8 @@
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.grcChungLoai = new DevExpress.XtraGrid.GridControl();
+            this.ChungLoaiHang = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
@@ -48,8 +48,8 @@
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grcChungLoai)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChungLoaiHang)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -116,7 +116,7 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.gridControl1);
+            this.groupControl1.Controls.Add(this.grcChungLoai);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 35);
             this.groupControl1.Name = "groupControl1";
@@ -124,29 +124,30 @@
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Danh sách Chủng Loại Hàng";
             // 
-            // gridControl1
+            // grcChungLoai
             // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(2, 20);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(596, 339);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.grcChungLoai.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grcChungLoai.Location = new System.Drawing.Point(2, 20);
+            this.grcChungLoai.MainView = this.ChungLoaiHang;
+            this.grcChungLoai.Name = "grcChungLoai";
+            this.grcChungLoai.Size = new System.Drawing.Size(596, 339);
+            this.grcChungLoai.TabIndex = 0;
+            this.grcChungLoai.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.ChungLoaiHang});
+            this.grcChungLoai.Load += new System.EventHandler(this.grcChungLoai_Load);
             // 
-            // gridView1
+            // ChungLoaiHang
             // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.IndicatorWidth = 40;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.NewItemRowText = "Thêm mới";
-            this.gridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.True;
-            this.gridView1.OptionsCustomization.AllowQuickHideColumns = false;
-            this.gridView1.OptionsSelection.CheckBoxSelectorColumnWidth = 30;
-            this.gridView1.OptionsSelection.MultiSelect = true;
-            this.gridView1.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
-            this.gridView1.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
+            this.ChungLoaiHang.GridControl = this.grcChungLoai;
+            this.ChungLoaiHang.IndicatorWidth = 40;
+            this.ChungLoaiHang.Name = "ChungLoaiHang";
+            this.ChungLoaiHang.NewItemRowText = "Thêm mới";
+            this.ChungLoaiHang.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.True;
+            this.ChungLoaiHang.OptionsCustomization.AllowQuickHideColumns = false;
+            this.ChungLoaiHang.OptionsSelection.CheckBoxSelectorColumnWidth = 30;
+            this.ChungLoaiHang.OptionsSelection.MultiSelect = true;
+            this.ChungLoaiHang.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            this.ChungLoaiHang.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
             // 
             // frmChungLoaiHang
             // 
@@ -167,8 +168,8 @@
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grcChungLoai)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChungLoaiHang)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -183,7 +184,7 @@
         private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl grcChungLoai;
+        private DevExpress.XtraGrid.Views.Grid.GridView ChungLoaiHang;
     }
 }

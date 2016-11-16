@@ -105,6 +105,11 @@
             this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
             this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
             this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
+
+            this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem33 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).BeginInit();
@@ -157,9 +162,11 @@
             this.skinRibbonGalleryBarItem1,
             this.ribbonGalleryBarItem1,
             this.skinRibbonGalleryBarItem2,
-            this.skinRibbonGalleryBarItem3});
+            this.skinRibbonGalleryBarItem3,
+            this.barButtonItem12,
+            this.barButtonItem33});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 42;
+            this.ribbonControl1.MaxItemId = 44;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -167,7 +174,9 @@
             this.ribbonPage3,
             this.ribbonPage4,
             this.ribbonPage6,
-            this.ribbonPage5});
+            this.ribbonPage5,
+
+            this.ribbonPage8});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemDateEdit1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
@@ -416,7 +425,7 @@
             // 
             this.barButtonItem31.Caption = "Thông Tin Về Phần Mềm";
             this.barButtonItem31.Id = 35;
-            this.barButtonItem31.LargeGlyph = global::QuanLySieuThi.Presentation.Properties.Resources._1477723843_Info;
+
             this.barButtonItem31.Name = "barButtonItem31";
             // 
             // barButtonItem32
@@ -702,6 +711,35 @@
             this.documentManager1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
             this.tabbedView1});
             // 
+            // ribbonPage7
+            // 
+
+            // 
+            // ribbonPage8
+            // 
+            this.ribbonPage8.Name = "ribbonPage8";
+            this.ribbonPage8.Text = "ribbonPage8";
+            // 
+            // ribbonPageGroup23
+            // 
+            this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem12);
+            this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem33);
+            this.ribbonPageGroup23.Name = "ribbonPageGroup23";
+            this.ribbonPageGroup23.Text = "DemoHeThong";
+            // 
+            // barButtonItem12
+            // 
+            this.barButtonItem12.Caption = "Demo";
+            this.barButtonItem12.Id = 42;
+            this.barButtonItem12.Name = "barButtonItem12";
+            // 
+            // barButtonItem33
+            // 
+            this.barButtonItem33.Caption = "Demo1";
+            this.barButtonItem33.Id = 43;
+
+            this.barButtonItem33.Name = "barButtonItem33";
+            // 
             // frmTrangChu
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -804,6 +842,11 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemDateEdit repositoryItemDateEdit1;
         private DevExpress.XtraBars.Docking2010.DocumentManager documentManager1;
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView tabbedView1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem33;
+
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup23;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage8;
     }
 }
 

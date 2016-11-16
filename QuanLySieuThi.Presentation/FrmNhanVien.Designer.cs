@@ -158,6 +158,7 @@
             this.btnThem.Location = new System.Drawing.Point(12, 12);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(194, 22);
+            this.btnThem.StyleController = this.layoutControl6;
             this.btnThem.TabIndex = 4;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
