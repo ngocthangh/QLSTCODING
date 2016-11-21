@@ -15,6 +15,7 @@ namespace QuanLySieuThi.DataBussiness
 
         public static bool SaveChanges(DataTable dt)
         {
+            if (dt == null) return false;
             return Controller.SaveChange(dt);
         }
 
