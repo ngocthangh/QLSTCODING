@@ -482,7 +482,7 @@
             this.searchControl1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Repository.ClearButton(),
             new DevExpress.XtraEditors.Repository.SearchButton()});
-            this.searchControl1.Size = new System.Drawing.Size(719, 20);
+            this.searchControl1.Size = new System.Drawing.Size(702, 20);
             this.searchControl1.StyleController = this.layoutControl1;
             this.searchControl1.TabIndex = 5;
             // 
@@ -492,7 +492,7 @@
             this.buttonEdit1.Name = "buttonEdit1";
             this.buttonEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.buttonEdit1.Size = new System.Drawing.Size(719, 20);
+            this.buttonEdit1.Size = new System.Drawing.Size(702, 20);
             this.buttonEdit1.StyleController = this.layoutControl1;
             this.buttonEdit1.TabIndex = 4;
             // 
@@ -506,14 +506,14 @@
             this.layoutControlItem2});
             this.Layout1.Location = new System.Drawing.Point(0, 0);
             this.Layout1.Name = "Layout1";
-            this.Layout1.Size = new System.Drawing.Size(839, 101);
+            this.Layout1.Size = new System.Drawing.Size(822, 86);
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.buttonEdit1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(819, 24);
+            this.layoutControlItem1.Size = new System.Drawing.Size(802, 24);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(93, 13);
             // 
             // layoutControlItem2
@@ -521,7 +521,7 @@
             this.layoutControlItem2.Control = this.searchControl1;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(819, 39);
+            this.layoutControlItem2.Size = new System.Drawing.Size(802, 24);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(93, 13);
             // 
             // frmNhanVien

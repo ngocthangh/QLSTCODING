@@ -35,7 +35,6 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.grcDonViTinh = new DevExpress.XtraGrid.GridControl();
             this.grvDonViTinh = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.MaDVT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TenDVT = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -111,7 +110,6 @@
             // grvDonViTinh
             // 
             this.grvDonViTinh.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.MaDVT,
             this.TenDVT});
             this.grvDonViTinh.GridControl = this.grcDonViTinh;
             this.grvDonViTinh.IndicatorWidth = 40;
@@ -126,21 +124,13 @@
             this.grvDonViTinh.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.grvDonViTinh_CustomDrawRowIndicator);
             this.grvDonViTinh.InvalidRowException += new DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventHandler(this.grvDonViTinh_InvalidRowException);
             // 
-            // MaDVT
-            // 
-            this.MaDVT.Caption = "Mã Đơn Vị Tính";
-            this.MaDVT.FieldName = "MaDVT";
-            this.MaDVT.Name = "MaDVT";
-            this.MaDVT.Visible = true;
-            this.MaDVT.VisibleIndex = 1;
-            // 
             // TenDVT
             // 
             this.TenDVT.Caption = "Tên Đơn Vị Tính";
             this.TenDVT.FieldName = "TenDVT";
             this.TenDVT.Name = "TenDVT";
             this.TenDVT.Visible = true;
-            this.TenDVT.VisibleIndex = 2;
+            this.TenDVT.VisibleIndex = 1;
             // 
             // frmDonViTinh
             // 
@@ -171,7 +161,6 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraGrid.GridControl grcDonViTinh;
         private DevExpress.XtraGrid.Views.Grid.GridView grvDonViTinh;
-        private DevExpress.XtraGrid.Columns.GridColumn MaDVT;
         private DevExpress.XtraGrid.Columns.GridColumn TenDVT;
     }
 }

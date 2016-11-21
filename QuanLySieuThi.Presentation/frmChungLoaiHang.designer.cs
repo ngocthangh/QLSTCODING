@@ -60,7 +60,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(600, 35);
+            this.panelControl1.Size = new System.Drawing.Size(547, 35);
             this.panelControl1.TabIndex = 0;
             // 
             // panelControl4
@@ -123,7 +123,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 35);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(600, 361);
+            this.groupControl1.Size = new System.Drawing.Size(547, 361);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Danh sách Chủng Loại Hàng";
             // 
@@ -133,7 +133,7 @@
             this.grcChungLoai.Location = new System.Drawing.Point(2, 20);
             this.grcChungLoai.MainView = this.ChungLoaiHang;
             this.grcChungLoai.Name = "grcChungLoai";
-            this.grcChungLoai.Size = new System.Drawing.Size(596, 339);
+            this.grcChungLoai.Size = new System.Drawing.Size(543, 339);
             this.grcChungLoai.TabIndex = 0;
             this.grcChungLoai.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.ChungLoaiHang});
@@ -160,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 396);
+            this.ClientSize = new System.Drawing.Size(547, 396);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.panelControl1);
             this.Name = "frmChungLoaiHang";

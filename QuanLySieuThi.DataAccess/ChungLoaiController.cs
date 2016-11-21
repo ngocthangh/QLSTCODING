@@ -42,5 +42,10 @@ namespace QuanLySieuThi.DataAccess
         {
             return _connect.Update("SP_CHUNGLOAI_UPD", chungloai) == 1;
         }
+
+        public string AutoGenerateId()
+        {
+            return _connect.AutoGenerateId("SP_DONVITINH_AUTOGENERATEID");
+        }
     }
 }

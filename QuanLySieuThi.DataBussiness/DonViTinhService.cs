@@ -33,5 +33,10 @@ namespace QuanLySieuThi.DataBussiness
         {
             return Controller.GetById(id);
         }
+
+        public static string AutoGenerateId()
+        {
+            return Controller.AutoGenerateId();
+        }
     }
 }
