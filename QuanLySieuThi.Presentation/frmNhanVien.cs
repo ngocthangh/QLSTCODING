@@ -24,11 +24,18 @@ namespace QuanLySieuThi.Presentation
             var dt = NhanVienService.LoadDataTable();
             //dt.Columns.Add("Status");
             grcNhanVien.DataSource = dt;
+            string id = NhanVienService.AutoGenerateId();
+            txtMaNhanVien.Text = id;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void hideContainerTop_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

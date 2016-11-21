@@ -35,6 +35,17 @@ namespace QuanLySieuThi.DataAccess
             return _dataTable;
         }
 
+        public string AutoGenerateId(string sql)
+        {
+            if (_connect.State == ConnectionState.Closed)
+                _connect.Open();
+            var command = new SqlCommand(sql, _connect);
+            command.CommandType = CommandType.StoredProcedure;
+            string id = (string)command.ExecuteScalar();
+            _connect.Close();
+            return id;
+        }
+
         public DataTable LoadData(string sql)
         {
             if (_connect.State == ConnectionState.Closed)

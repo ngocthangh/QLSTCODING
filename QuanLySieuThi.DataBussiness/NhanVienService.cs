@@ -9,6 +9,11 @@ namespace QuanLySieuThi.DataBussiness
     {
         private static readonly NhanVienController Controller = new NhanVienController();
 
+        public static string AutoGenerateId()
+        {
+            return Controller.AutoGenerateId();
+        }
+
         public static DataTable LoadDataTable()
         {
             return Controller.GetByAll();

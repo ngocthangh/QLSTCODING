@@ -64,6 +64,7 @@ namespace QuanLySieuThi.Presentation
         private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             OpenForm<frmNhanVien>();
+            //OpenForm<Form1>();
         }
 
         private void btnPhieuNhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

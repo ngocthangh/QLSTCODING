@@ -69,6 +69,8 @@
             this.ribbonGalleryBarItem1 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.skinRibbonGalleryBarItem2 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.skinRibbonGalleryBarItem3 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem33 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -100,16 +102,13 @@
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup25 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.repositoryItemDateEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
             this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
             this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
-
-            this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem33 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).BeginInit();
@@ -175,7 +174,6 @@
             this.ribbonPage4,
             this.ribbonPage6,
             this.ribbonPage5,
-
             this.ribbonPage8});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemDateEdit1});
@@ -425,7 +423,6 @@
             // 
             this.barButtonItem31.Caption = "Thông Tin Về Phần Mềm";
             this.barButtonItem31.Id = 35;
-
             this.barButtonItem31.Name = "barButtonItem31";
             // 
             // barButtonItem32
@@ -466,6 +463,18 @@
             this.skinRibbonGalleryBarItem3.Caption = "skinRibbonGalleryBarItem3";
             this.skinRibbonGalleryBarItem3.Id = 40;
             this.skinRibbonGalleryBarItem3.Name = "skinRibbonGalleryBarItem3";
+            // 
+            // barButtonItem12
+            // 
+            this.barButtonItem12.Caption = "Demo";
+            this.barButtonItem12.Id = 42;
+            this.barButtonItem12.Name = "barButtonItem12";
+            // 
+            // barButtonItem33
+            // 
+            this.barButtonItem33.Caption = "Demo1";
+            this.barButtonItem33.Id = 43;
+            this.barButtonItem33.Name = "barButtonItem33";
             // 
             // ribbonPage1
             // 
@@ -682,6 +691,11 @@
             this.ribbonPageGroup25.Name = "ribbonPageGroup25";
             this.ribbonPageGroup25.Text = "Nhóm";
             // 
+            // ribbonPage8
+            // 
+            this.ribbonPage8.Name = "ribbonPage8";
+            this.ribbonPage8.Text = "ribbonPage8";
+            // 
             // repositoryItemDateEdit1
             // 
             this.repositoryItemDateEdit1.AutoHeight = false;
@@ -711,34 +725,12 @@
             this.documentManager1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
             this.tabbedView1});
             // 
-            // ribbonPage7
-            // 
-
-            // 
-            // ribbonPage8
-            // 
-            this.ribbonPage8.Name = "ribbonPage8";
-            this.ribbonPage8.Text = "ribbonPage8";
-            // 
             // ribbonPageGroup23
             // 
             this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem12);
             this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem33);
             this.ribbonPageGroup23.Name = "ribbonPageGroup23";
             this.ribbonPageGroup23.Text = "DemoHeThong";
-            // 
-            // barButtonItem12
-            // 
-            this.barButtonItem12.Caption = "Demo";
-            this.barButtonItem12.Id = 42;
-            this.barButtonItem12.Name = "barButtonItem12";
-            // 
-            // barButtonItem33
-            // 
-            this.barButtonItem33.Caption = "Demo1";
-            this.barButtonItem33.Id = 43;
-
-            this.barButtonItem33.Name = "barButtonItem33";
             // 
             // frmTrangChu
             // 

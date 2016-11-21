@@ -17,6 +17,12 @@ namespace QuanLySieuThi.DataAccess
         {
             return _connect.getDataTable();
         }
+
+        public string AutoGenerateId()
+        {
+            return _connect.AutoGenerateId("SP_NHANVIEN_AUTOGENERATEID");
+        }
+
         public DataTable GetByAll()
         {
             return _connect.LoadData("SP_NHANVIEN_GETALL");
