@@ -24,7 +24,7 @@ namespace QuanLySieuThi.Presentation
         {
             var dt = DonViTinhService.LoadDataTable();
             grcDonViTinh.DataSource = dt;
-            string id = DonViTinhService.AutoGenerateId();
+            string madvt = DonViTinhService.AutoGenerateId();
             
         }
 
