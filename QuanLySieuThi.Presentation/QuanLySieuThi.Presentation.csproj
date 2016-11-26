@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuanLySieuThi.Presentation</RootNamespace>
     <AssemblyName>QuanLySieuThi.Presentation</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -60,6 +61,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmChucVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChucVu.Designer.cs">
+      <DependentUpon>FrmChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoaDon.Designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhachHangThanThiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhachHangThanThiet.Designer.cs">
+      <DependentUpon>frmKhachHangThanThiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuKiemKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuKiemKe.Designer.cs">
+      <DependentUpon>frmPhieuKiemKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +141,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmChucVu.resx">
+      <DependentUpon>FrmChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhachHangThanThiet.resx">
+      <DependentUpon>frmKhachHangThanThiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuKiemKe.resx">
+      <DependentUpon>frmPhieuKiemKe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPhieuNhap.resx">
       <DependentUpon>frmPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>

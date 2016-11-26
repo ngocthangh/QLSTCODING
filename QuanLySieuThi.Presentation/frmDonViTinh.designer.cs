@@ -28,30 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TenDVT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnDong = new DevExpress.XtraEditors.SimpleButton();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.grcDonViTinh = new DevExpress.XtraGrid.GridControl();
-            this.grvDonViTinh = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colMaDVT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcDonViTinh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grvDonViTinh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // TenDVT
-            // 
-            this.TenDVT.Caption = "Tên Đơn Vị Tính";
-            this.TenDVT.FieldName = "TenDVT";
-            this.TenDVT.Name = "TenDVT";
-            this.TenDVT.Visible = true;
-            this.TenDVT.VisibleIndex = 2;
             // 
             // panelControl1
             // 
@@ -72,7 +62,6 @@
             this.btnDong.Size = new System.Drawing.Size(75, 23);
             this.btnDong.TabIndex = 2;
             this.btnDong.Text = "Đóng";
-            this.btnDong.Click += new System.EventHandler(this.buttonDong_Click);
             // 
             // btnXoa
             // 
@@ -82,7 +71,6 @@
             this.btnXoa.Size = new System.Drawing.Size(75, 23);
             this.btnXoa.TabIndex = 1;
             this.btnXoa.Text = "Xóa";
-            this.btnXoa.Click += new System.EventHandler(this.buttonXoa_Click);
             // 
             // btnLuu
             // 
@@ -92,7 +80,6 @@
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 0;
             this.btnLuu.Text = "Lưu";
-            this.btnLuu.Click += new System.EventHandler(this.buttonLuu_Click);
             // 
             // groupControl1
             // 
@@ -108,39 +95,26 @@
             // 
             this.grcDonViTinh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grcDonViTinh.Location = new System.Drawing.Point(2, 20);
-            this.grcDonViTinh.MainView = this.grvDonViTinh;
+            this.grcDonViTinh.MainView = this.gridView1;
             this.grcDonViTinh.Name = "grcDonViTinh";
             this.grcDonViTinh.Size = new System.Drawing.Size(615, 351);
             this.grcDonViTinh.TabIndex = 0;
             this.grcDonViTinh.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.grvDonViTinh});
+            this.gridView1});
             this.grcDonViTinh.Load += new System.EventHandler(this.grcDonViTinh_Load);
             // 
-            // grvDonViTinh
+            // gridView1
             // 
-            this.grvDonViTinh.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.TenDVT,
-            this.colMaDVT});
-            this.grvDonViTinh.GridControl = this.grcDonViTinh;
-            this.grvDonViTinh.IndicatorWidth = 40;
-            this.grvDonViTinh.Name = "grvDonViTinh";
-            this.grvDonViTinh.NewItemRowText = "Thêm Mới";
-            this.grvDonViTinh.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.True;
-            this.grvDonViTinh.OptionsCustomization.AllowQuickHideColumns = false;
-            this.grvDonViTinh.OptionsSelection.CheckBoxSelectorColumnWidth = 30;
-            this.grvDonViTinh.OptionsSelection.MultiSelect = true;
-            this.grvDonViTinh.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
-            this.grvDonViTinh.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
-            this.grvDonViTinh.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.grvDonViTinh_CustomDrawRowIndicator);
-            this.grvDonViTinh.InvalidRowException += new DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventHandler(this.grvDonViTinh_InvalidRowException);
-            // 
-            // colMaDVT
-            // 
-            this.colMaDVT.Caption = "Mã Đơn Vị Tính";
-            this.colMaDVT.FieldName = "MaDVT";
-            this.colMaDVT.Name = "colMaDVT";
-            this.colMaDVT.Visible = true;
-            this.colMaDVT.VisibleIndex = 1;
+            this.gridView1.GridControl = this.grcDonViTinh;
+            this.gridView1.IndicatorWidth = 40;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.NewItemRowText = "Thêm Mới";
+            this.gridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.True;
+            this.gridView1.OptionsCustomization.AllowQuickHideColumns = false;
+            this.gridView1.OptionsSelection.CheckBoxSelectorColumnWidth = 30;
+            this.gridView1.OptionsSelection.MultiSelect = true;
+            this.gridView1.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            this.gridView1.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
             // 
             // frmDonViTinh
             // 
@@ -151,13 +125,12 @@
             this.Controls.Add(this.panelControl1);
             this.Name = "frmDonViTinh";
             this.Text = "Quản Lí Đơn Vị Tính";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDonViTinh_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grcDonViTinh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grvDonViTinh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -170,8 +143,6 @@
         private DevExpress.XtraEditors.SimpleButton btnLuu;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraGrid.GridControl grcDonViTinh;
-        private DevExpress.XtraGrid.Views.Grid.GridView grvDonViTinh;
-        private DevExpress.XtraGrid.Columns.GridColumn colMaDVT;
-        private DevExpress.XtraGrid.Columns.GridColumn TenDVT;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }
