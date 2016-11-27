@@ -61,27 +61,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmChucVu.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FrmChucVu.cs" />
     <Compile Include="FrmChucVu.Designer.cs">
       <DependentUpon>FrmChucVu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="frmHoaDon.cs" />
     <Compile Include="frmHoaDon.Designer.cs">
       <DependentUpon>frmHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmKhachHangThanThiet.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="frmKhachHangThanThiet.cs" />
     <Compile Include="frmKhachHangThanThiet.Designer.cs">
       <DependentUpon>frmKhachHangThanThiet.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPhieuKiemKe.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="frmPhieuKiemKe.cs" />
     <Compile Include="frmPhieuKiemKe.Designer.cs">
       <DependentUpon>frmPhieuKiemKe.cs</DependentUpon>
     </Compile>
