@@ -61,19 +61,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmChucVu.cs" />
-    <Compile Include="FrmChucVu.Designer.cs">
-      <DependentUpon>FrmChucVu.cs</DependentUpon>
+    <Compile Include="frmChucVu.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHoaDon.cs" />
+    <Compile Include="frmChucVu.Designer.cs">
+      <DependentUpon>frmChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmHoaDon.Designer.cs">
       <DependentUpon>frmHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmKhachHangThanThiet.cs" />
-    <Compile Include="frmKhachHangThanThiet.Designer.cs">
-      <DependentUpon>frmKhachHangThanThiet.cs</DependentUpon>
+    <Compile Include="FrmKhachHangThanThiet.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPhieuKiemKe.cs" />
+    <Compile Include="FrmKhachHangThanThiet.Designer.cs">
+      <DependentUpon>FrmKhachHangThanThiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuKiemKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmPhieuKiemKe.Designer.cs">
       <DependentUpon>frmPhieuKiemKe.cs</DependentUpon>
     </Compile>
@@ -133,14 +141,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmChucVu.resx">
-      <DependentUpon>FrmChucVu.cs</DependentUpon>
+    <EmbeddedResource Include="frmChucVu.resx">
+      <DependentUpon>frmChucVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHoaDon.resx">
       <DependentUpon>frmHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmKhachHangThanThiet.resx">
-      <DependentUpon>frmKhachHangThanThiet.cs</DependentUpon>
+    <EmbeddedResource Include="FrmKhachHangThanThiet.resx">
+      <DependentUpon>FrmKhachHangThanThiet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPhieuKiemKe.resx">
       <DependentUpon>frmPhieuKiemKe.cs</DependentUpon>
