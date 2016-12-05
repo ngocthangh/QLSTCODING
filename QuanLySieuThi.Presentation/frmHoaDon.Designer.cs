@@ -28,22 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.txtMaKhachHang = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.chbKHTT = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.btnHoaDonMoi = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.txtThanhTien = new DevExpress.XtraEditors.TextEdit();
-            this.txtChietKhau = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.btnIn = new DevExpress.XtraEditors.SimpleButton();
-            this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
-            this.txtTongTien = new DevExpress.XtraEditors.TextEdit();
-            this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.txtMaHoaDon = new DevExpress.XtraEditors.TextEdit();
             this.lbMaHoaDon = new DevExpress.XtraEditors.LabelControl();
@@ -51,7 +35,6 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtMaSanPham = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -66,17 +49,23 @@
             this.SoLuong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Gia = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ThanhTien = new DevExpress.XtraGrid.Columns.GridColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMaKhachHang.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chbKHTT.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtThanhTien.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtChietKhau.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
-            this.panelControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTongTien.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
-            this.panelControl6.SuspendLayout();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtMaKhachHang = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.chbKHTT = new DevExpress.XtraEditors.CheckEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
+            this.txtTongTien = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.txtThanhTien = new DevExpress.XtraEditors.TextEdit();
+            this.txtChietKhau = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.btnIn = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
+            this.btnHoaDonMoi = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaHoaDon.Properties)).BeginInit();
@@ -91,138 +80,18 @@
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcHoaDon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
+            this.panelControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMaKhachHang.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chbKHTT.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
+            this.panelControl6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTongTien.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtThanhTien.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtChietKhau.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // layoutControlItem2
-            // 
-            this.layoutControlItem2.Location = new System.Drawing.Point(80, 0);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(80, 100);
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(50, 20);
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(465, 5);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(80, 20);
-            this.textEdit2.TabIndex = 4;
-            // 
-            // txtMaKhachHang
-            // 
-            this.txtMaKhachHang.Location = new System.Drawing.Point(246, 5);
-            this.txtMaKhachHang.Name = "txtMaKhachHang";
-            this.txtMaKhachHang.Size = new System.Drawing.Size(89, 20);
-            this.txtMaKhachHang.TabIndex = 7;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Location = new System.Drawing.Point(393, 8);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(61, 13);
-            this.labelControl5.TabIndex = 3;
-            this.labelControl5.Text = "Điểm tích lũy";
-            // 
-            // chbKHTT
-            // 
-            this.chbKHTT.Location = new System.Drawing.Point(5, 5);
-            this.chbKHTT.Name = "chbKHTT";
-            this.chbKHTT.Properties.Caption = "Khách hàng thân thiết";
-            this.chbKHTT.Size = new System.Drawing.Size(131, 19);
-            this.chbKHTT.TabIndex = 0;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Location = new System.Drawing.Point(168, 8);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(72, 13);
-            this.labelControl4.TabIndex = 6;
-            this.labelControl4.Text = "Mã khách hàng";
-            // 
-            // btnHoaDonMoi
-            // 
-            this.btnHoaDonMoi.Location = new System.Drawing.Point(364, 350);
-            this.btnHoaDonMoi.Name = "btnHoaDonMoi";
-            this.btnHoaDonMoi.Size = new System.Drawing.Size(80, 25);
-            this.btnHoaDonMoi.TabIndex = 17;
-            this.btnHoaDonMoi.Text = "Hóa đơn mới";
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Location = new System.Drawing.Point(23, 8);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(45, 13);
-            this.labelControl8.TabIndex = 8;
-            this.labelControl8.Text = "Tổng tiền";
-            // 
-            // txtThanhTien
-            // 
-            this.txtThanhTien.Location = new System.Drawing.Point(465, 5);
-            this.txtThanhTien.Name = "txtThanhTien";
-            this.txtThanhTien.Size = new System.Drawing.Size(80, 20);
-            this.txtThanhTien.TabIndex = 4;
-            // 
-            // txtChietKhau
-            // 
-            this.txtChietKhau.Location = new System.Drawing.Point(246, 5);
-            this.txtChietKhau.Name = "txtChietKhau";
-            this.txtChietKhau.Size = new System.Drawing.Size(89, 20);
-            this.txtChietKhau.TabIndex = 7;
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Location = new System.Drawing.Point(393, 8);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(51, 13);
-            this.labelControl6.TabIndex = 3;
-            this.labelControl6.Text = "Thành tiền";
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Location = new System.Drawing.Point(168, 8);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(51, 13);
-            this.labelControl7.TabIndex = 6;
-            this.labelControl7.Text = "Chiết khấu";
-            // 
-            // btnIn
-            // 
-            this.btnIn.Location = new System.Drawing.Point(264, 350);
-            this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(80, 25);
-            this.btnIn.TabIndex = 14;
-            this.btnIn.Text = "In hóa đơn";
-            // 
-            // panelControl5
-            // 
-            this.panelControl5.Controls.Add(this.textEdit2);
-            this.panelControl5.Controls.Add(this.txtMaKhachHang);
-            this.panelControl5.Controls.Add(this.labelControl5);
-            this.panelControl5.Controls.Add(this.chbKHTT);
-            this.panelControl5.Controls.Add(this.labelControl4);
-            this.panelControl5.Location = new System.Drawing.Point(0, 271);
-            this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(559, 30);
-            this.panelControl5.TabIndex = 13;
-            // 
-            // txtTongTien
-            // 
-            this.txtTongTien.Location = new System.Drawing.Point(74, 5);
-            this.txtTongTien.Name = "txtTongTien";
-            this.txtTongTien.Size = new System.Drawing.Size(72, 20);
-            this.txtTongTien.TabIndex = 9;
-            // 
-            // panelControl6
-            // 
-            this.panelControl6.Controls.Add(this.txtTongTien);
-            this.panelControl6.Controls.Add(this.labelControl8);
-            this.panelControl6.Controls.Add(this.txtThanhTien);
-            this.panelControl6.Controls.Add(this.txtChietKhau);
-            this.panelControl6.Controls.Add(this.labelControl6);
-            this.panelControl6.Controls.Add(this.labelControl7);
-            this.panelControl6.Location = new System.Drawing.Point(0, 302);
-            this.panelControl6.Name = "panelControl6";
-            this.panelControl6.Size = new System.Drawing.Size(559, 30);
-            this.panelControl6.TabIndex = 15;
             // 
             // panelControl1
             // 
@@ -235,7 +104,7 @@
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(559, 40);
-            this.panelControl1.TabIndex = 11;
+            this.panelControl1.TabIndex = 0;
             // 
             // txtMaHoaDon
             // 
@@ -248,9 +117,9 @@
             // 
             this.lbMaHoaDon.Location = new System.Drawing.Point(5, 12);
             this.lbMaHoaDon.Name = "lbMaHoaDon";
-            this.lbMaHoaDon.Size = new System.Drawing.Size(56, 13);
+            this.lbMaHoaDon.Size = new System.Drawing.Size(54, 13);
             this.lbMaHoaDon.TabIndex = 6;
-            this.lbMaHoaDon.Text = "Mã hóa đơn";
+            this.lbMaHoaDon.Text = "Số hóa đơn";
             // 
             // txtSoLuong
             // 
@@ -281,14 +150,7 @@
             this.labelControl1.Size = new System.Drawing.Size(63, 13);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Mã sản phẩm";
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Location = new System.Drawing.Point(468, 350);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(80, 25);
-            this.btnThoat.TabIndex = 16;
-            this.btnThoat.Text = "Thoát";
+            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // panelControl2
             // 
@@ -298,7 +160,8 @@
             this.panelControl2.Location = new System.Drawing.Point(0, 40);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(559, 230);
-            this.panelControl2.TabIndex = 12;
+            this.panelControl2.TabIndex = 1;
+            this.panelControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl2_Paint);
             // 
             // panelControl4
             // 
@@ -410,33 +273,161 @@
             this.ThanhTien.Visible = true;
             this.ThanhTien.VisibleIndex = 4;
             // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Location = new System.Drawing.Point(80, 0);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(80, 100);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(50, 20);
+            // 
+            // panelControl5
+            // 
+            this.panelControl5.Controls.Add(this.textEdit2);
+            this.panelControl5.Controls.Add(this.txtMaKhachHang);
+            this.panelControl5.Controls.Add(this.labelControl5);
+            this.panelControl5.Controls.Add(this.chbKHTT);
+            this.panelControl5.Controls.Add(this.labelControl4);
+            this.panelControl5.Location = new System.Drawing.Point(0, 271);
+            this.panelControl5.Name = "panelControl5";
+            this.panelControl5.Size = new System.Drawing.Size(559, 30);
+            this.panelControl5.TabIndex = 2;
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(465, 5);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Size = new System.Drawing.Size(80, 20);
+            this.textEdit2.TabIndex = 4;
+            // 
+            // txtMaKhachHang
+            // 
+            this.txtMaKhachHang.Location = new System.Drawing.Point(246, 5);
+            this.txtMaKhachHang.Name = "txtMaKhachHang";
+            this.txtMaKhachHang.Size = new System.Drawing.Size(89, 20);
+            this.txtMaKhachHang.TabIndex = 7;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Location = new System.Drawing.Point(393, 8);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(61, 13);
+            this.labelControl5.TabIndex = 3;
+            this.labelControl5.Text = "Điểm tích lũy";
+            // 
+            // chbKHTT
+            // 
+            this.chbKHTT.Location = new System.Drawing.Point(5, 5);
+            this.chbKHTT.Name = "chbKHTT";
+            this.chbKHTT.Properties.Caption = "Khách hàng thân thiết";
+            this.chbKHTT.Size = new System.Drawing.Size(131, 19);
+            this.chbKHTT.TabIndex = 0;
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(168, 8);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(72, 13);
+            this.labelControl4.TabIndex = 6;
+            this.labelControl4.Text = "Mã khách hàng";
+            // 
+            // panelControl6
+            // 
+            this.panelControl6.Controls.Add(this.txtTongTien);
+            this.panelControl6.Controls.Add(this.labelControl8);
+            this.panelControl6.Controls.Add(this.txtThanhTien);
+            this.panelControl6.Controls.Add(this.txtChietKhau);
+            this.panelControl6.Controls.Add(this.labelControl6);
+            this.panelControl6.Controls.Add(this.labelControl7);
+            this.panelControl6.Location = new System.Drawing.Point(0, 302);
+            this.panelControl6.Name = "panelControl6";
+            this.panelControl6.Size = new System.Drawing.Size(559, 30);
+            this.panelControl6.TabIndex = 8;
+            // 
+            // txtTongTien
+            // 
+            this.txtTongTien.Location = new System.Drawing.Point(74, 5);
+            this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.Size = new System.Drawing.Size(72, 20);
+            this.txtTongTien.TabIndex = 9;
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Location = new System.Drawing.Point(23, 8);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(45, 13);
+            this.labelControl8.TabIndex = 8;
+            this.labelControl8.Text = "Tổng tiền";
+            // 
+            // txtThanhTien
+            // 
+            this.txtThanhTien.Location = new System.Drawing.Point(465, 5);
+            this.txtThanhTien.Name = "txtThanhTien";
+            this.txtThanhTien.Size = new System.Drawing.Size(80, 20);
+            this.txtThanhTien.TabIndex = 4;
+            // 
+            // txtChietKhau
+            // 
+            this.txtChietKhau.Location = new System.Drawing.Point(246, 5);
+            this.txtChietKhau.Name = "txtChietKhau";
+            this.txtChietKhau.Size = new System.Drawing.Size(89, 20);
+            this.txtChietKhau.TabIndex = 7;
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Location = new System.Drawing.Point(393, 8);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(51, 13);
+            this.labelControl6.TabIndex = 3;
+            this.labelControl6.Text = "Thành tiền";
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Location = new System.Drawing.Point(168, 8);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(51, 13);
+            this.labelControl7.TabIndex = 6;
+            this.labelControl7.Text = "Chiết khấu";
+            this.labelControl7.Click += new System.EventHandler(this.labelControl7_Click);
+            // 
+            // btnIn
+            // 
+            this.btnIn.Location = new System.Drawing.Point(264, 350);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(80, 25);
+            this.btnIn.TabIndex = 3;
+            this.btnIn.Text = "In hóa đơn";
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Location = new System.Drawing.Point(468, 350);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(80, 25);
+            this.btnThoat.TabIndex = 9;
+            this.btnThoat.Text = "Thoát";
+            // 
+            // btnHoaDonMoi
+            // 
+            this.btnHoaDonMoi.Location = new System.Drawing.Point(364, 350);
+            this.btnHoaDonMoi.Name = "btnHoaDonMoi";
+            this.btnHoaDonMoi.Size = new System.Drawing.Size(80, 25);
+            this.btnHoaDonMoi.TabIndex = 10;
+            this.btnHoaDonMoi.Text = "Hóa đơn mới";
+            // 
             // frmHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(559, 384);
+            this.ClientSize = new System.Drawing.Size(560, 383);
             this.Controls.Add(this.btnHoaDonMoi);
-            this.Controls.Add(this.btnIn);
-            this.Controls.Add(this.panelControl5);
-            this.Controls.Add(this.panelControl6);
-            this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnIn);
+            this.Controls.Add(this.panelControl6);
+            this.Controls.Add(this.panelControl5);
             this.Controls.Add(this.panelControl2);
+            this.Controls.Add(this.panelControl1);
             this.Name = "frmHoaDon";
-            this.Text = "frmHoaDon";
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMaKhachHang.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chbKHTT.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtThanhTien.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtChietKhau.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
-            this.panelControl5.ResumeLayout(false);
-            this.panelControl5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTongTien.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
-            this.panelControl6.ResumeLayout(false);
-            this.panelControl6.PerformLayout();
+            this.Text = "HoaDon";
+            this.Load += new System.EventHandler(this.frmHoaDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
@@ -453,49 +444,63 @@
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grcHoaDon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
+            this.panelControl5.ResumeLayout(false);
+            this.panelControl5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMaKhachHang.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chbKHTT.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
+            this.panelControl6.ResumeLayout(false);
+            this.panelControl6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTongTien.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtThanhTien.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtChietKhau.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.TextEdit txtMaSanPham;
+        private DevExpress.XtraEditors.TextEdit txtSoLuong;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraEditors.SimpleButton btnCapNhat;
+        private DevExpress.XtraGrid.GridControl grcHoaDon;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn TenSanPham;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraGrid.Columns.GridColumn SoLuong;
         private DevExpress.XtraGrid.Columns.GridColumn Gia;
+        private DevExpress.XtraGrid.Columns.GridColumn ThanhTien;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraEditors.SimpleButton btnThem;
+        private DevExpress.XtraEditors.PanelControl panelControl4;
+        private DevExpress.XtraEditors.PanelControl panelControl3;
+        private DevExpress.XtraEditors.SimpleButton btnXoa;
+        private DevExpress.XtraEditors.PanelControl panelControl5;
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.TextEdit txtMaKhachHang;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.CheckEdit chbKHTT;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraGrid.Columns.GridColumn ThanhTien;
-        private DevExpress.XtraEditors.SimpleButton btnHoaDonMoi;
+        private DevExpress.XtraEditors.PanelControl panelControl6;
+        private DevExpress.XtraEditors.TextEdit txtTongTien;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.TextEdit txtThanhTien;
         private DevExpress.XtraEditors.TextEdit txtChietKhau;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.SimpleButton btnIn;
-        private DevExpress.XtraEditors.PanelControl panelControl5;
-        private DevExpress.XtraEditors.TextEdit txtTongTien;
-        private DevExpress.XtraEditors.PanelControl panelControl6;
-        private DevExpress.XtraGrid.Columns.GridColumn SoLuong;
-        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.SimpleButton btnThoat;
+        private DevExpress.XtraEditors.SimpleButton btnHoaDonMoi;
         private DevExpress.XtraEditors.TextEdit txtMaHoaDon;
         private DevExpress.XtraEditors.LabelControl lbMaHoaDon;
-        private DevExpress.XtraEditors.TextEdit txtSoLuong;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit txtMaSanPham;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton btnThoat;
-        private DevExpress.XtraEditors.PanelControl panelControl2;
-        private DevExpress.XtraEditors.PanelControl panelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.PanelControl panelControl3;
-        private DevExpress.XtraEditors.SimpleButton btnThem;
-        private DevExpress.XtraEditors.SimpleButton btnCapNhat;
-        private DevExpress.XtraEditors.SimpleButton btnXoa;
-        private DevExpress.XtraGrid.GridControl grcHoaDon;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn TenSanPham;
+
     }
 }

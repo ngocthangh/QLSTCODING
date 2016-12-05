@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace QuanLySieuThi.Presentation
 {
-    public partial class frmChucVu : Form
+    public partial class FrmChucVu : Form
     {
-        public frmChucVu()
+        public FrmChucVu()
         {
             InitializeComponent();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupControl1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
